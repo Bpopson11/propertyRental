@@ -1,0 +1,26 @@
+.jumbotron {
+  background-color: #96482b;
+  text-align: center;
+  color: #878460;
+}
+body {
+  background-color: #666966;
+  color: #e7ddc8;
+}
+a:link {
+  color: #e7ddc8;
+}
+a:visited {
+  color: #fda279;
+}
+button {
+  color: #878460;
+}
+footer {
+  text-align: center;
+}
+
+/*new-rental.hbs*/
+input {
+  color: #878460;
+}
