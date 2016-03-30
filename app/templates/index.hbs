@@ -3,9 +3,19 @@
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
-  {{#each model as |rental|}}
-    {{rental-tile rental=rental update="update" destroyRental="destroyRental" update="update"}}
+  {{#each model.rentals as |rental|}}
+    {{rental-tile rental=rental destroyRental="destroyRental" update="update"}}
   {{/each}}
 </ul>
 
-{{new-rental save2="save3"}}
+{{new-rental saveRental="saveRental"}}
+
+<h2> Cities </h2>
+
+<ul>
+  {{#each model.cities as |city|}}
+    <li>{{city.name}}</li>
+  {{/each}}
+</ul>
+
+{{new-city saveCity="saveCity"}}
