@@ -1,0 +1,5 @@
+<ul>
+  {{#each model.cities as |city|}}
+    <li>{{#link-to 'rental'}}{{city.rental.owner}}{{/link-to}}</li>
+  {{/each}}
+</ul>
